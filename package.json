@@ -1,0 +1,43 @@
+{
+  "name": "exam-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "ts-node-dev --respawn --pretty --transpile-only src/index.ts",
+    "seed": "ts-node-dev src/seed/generateMap.ts",
+    "table-parkingSpot": "ts-node-dev src/tables/parkingSpot.ts",
+    "table-entryPoint": "ts-node-dev src/tables/entryPoint.ts",
+    "table-ticket": "ts-node-dev src/tables/ticket.ts",
+    "table-vehicle": "ts-node-dev src/tables/vehicle.ts",
+    "test-table-parkingSpot": "ts-node-dev src/tables/testParkingSpot.ts",
+    "test-table-ticket": "ts-node-dev src/tables/testTicket.ts",
+    "test-table-vehicle": "ts-node-dev src/tables/testVehicle.ts",
+    "test-table-entryPoint": "ts-node-dev src/tables/testEntryPoint.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.2.0",
+    "@types/node": "^18.11.7",
+    "jest": "^29.1.2",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.186.0",
+    "@aws-sdk/lib-dynamodb": "^3.186.0",
+    "@types/date-fns": "^2.6.0",
+    "@types/lodash": "^4.14.186",
+    "@types/uuid": "^8.3.4",
+    "date-fns": "^2.29.3",
+    "dotenv": "^16.0.3",
+    "dynamo-converters": "^6.1.8",
+    "jose": "^4.10.0",
+    "lodash": "^4.17.21",
+    "uuid": "^9.0.0"
+  }
+}
